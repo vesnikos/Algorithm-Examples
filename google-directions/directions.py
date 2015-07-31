@@ -106,7 +106,10 @@ client = Client(key=GetGoogleKey(
 loc = geocoder(client)
 latlong = loc.coords("Triantafyllopoy 35 thessaloniki")
 
-wp = directions.directions(client, "Γεωργίου Γεννηματά καλαμαριά", "Triantafyllopouloy 35 Pylaia", language="el")
+wp = directions.directions(client,
+                           origin="Γεωργίου Γεννηματά καλαμαριά",
+                           destination="Triantafyllopouloy 35 Pylaia",
+                           mode='driving', language="el", units="metric")
 
 wr = shapefile.Writer(shapefile.POLYLINE)
 wr.autoBalance = 1
