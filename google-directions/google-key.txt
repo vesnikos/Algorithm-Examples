@@ -1,0 +1,4 @@
+# Single file containing Google Key
+# https://console.developers.google.com/
+
+<replace-with-google-api-key>
