@@ -32,9 +32,12 @@
 
 # Shapefiles
 *.shp
-*.dbf
 *.shx
 *.prj
+*.dbf
+*.shp.xml
+*.sbx
+*.sbn
 *.cpg
 
 # Cad
